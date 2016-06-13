@@ -2309,7 +2309,7 @@
 <td class=" subcell wholedocgutter level4 levelguttercolor4" style="width: 63px;"></td>
 <td class=" subcell wholedocgutter indicator level4 levelguttercolor4" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
 <td class=" subcell wholedocgutter labelpadding level4 levelguttercolor4" style=" width: 1px; "></td>
-<td class=" content level4 subcell">biopax has rdf:id, which seems closest to sbml 'id' attributes<br>
+<td class=" content level4 subcell">Biopax has <span class="" style='font-family: "DejaVu Sans Mono", sans-serif;  font-weight: 300;  font-size: 12px;'>rdf:ID</span>, which seems closest to sbml 'id' attributes<br>
 </td>
 </tr></table></div></td>
 <td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor4"><div class="full column level4" style=""></div></div></td>
@@ -2326,17 +2326,65 @@
 <td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor4"><div class="full column level4" style=""></div></div></td>
 <td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor4"><div class="full column level4" style=""></div></div></td>
 </tr></table>
-<div id="pahLhwtSwNZR" class="expanded"><table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="ix0egQdg8vJ">
+<div id="pahLhwtSwNZR" class="expanded">
+<table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="ix0egQdg8vJ">
 <td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor5"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
 <td class=" subcell wholedocgutter level5 levelguttercolor5" style="width: 81px;"></td>
-<td class=" subcell wholedocgutter indicator level5 levelguttercolor5" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
+<td class=" subcell wholedocgutter indicator level5 levelguttercolor5" style="width: 15px;"><img onmousedown="ioSwitch('pix0egQdg8vJ', event.shiftKey)" id="iix0egQdg8vJ" border="0" alt="V" class="parent" src="Expanded.png" title="collapse"></td>
 <td class=" subcell wholedocgutter labelpadding level5 levelguttercolor5" style=" width: 1px; "></td>
-<td class=" content level5 subcell">Andreas points out that ordinary Java functions for detecting whether something is a letter or number may not be appropriate because they allow more characters than the strict subset of letters and numbers allowed by SBML (e.g., they consider Unicode accented characters to be letters whereas SBML doesn't)<br>
+<td class=" content level5 subcell">Andreas points out that ordinary Java functions for detecting whether something is a letter or number may not be appropriate because they allow more characters than the strict subset of letters and numbers allowed by SBML (e.g., they consider Unicode accented characters to be letters whereas SBML doesn't). Suggests using something like this (from the SBVC code, I guess?):<br>
 </td>
 </tr></table></div></td>
 <td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor5"><div class="full column level5" style=""></div></div></td>
 <td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor5"><div class="full column level5" style=""></div></div></td>
+</tr></table>
+<div id="pix0egQdg8vJ" class="expanded"><table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="n5WYGE23pBc">
+<td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor6"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
+<td class=" subcell wholedocgutter level6 levelguttercolor6" style="width: 99px;"></td>
+<td class=" subcell wholedocgutter indicator level6 levelguttercolor6" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
+<td class=" subcell wholedocgutter labelpadding level6 levelguttercolor6" style=' width: 1px; font-family: "DejaVu Sans Mono", sans-serif;  font-weight: 300;  font-size: 12px;'></td>
+<td class=" content level6 subcell" style='font-family: "DejaVu Sans Mono", sans-serif;  font-weight: 300;  font-size: 12px;'>public static boolean isLetter(char c) { return ((c &gt;= 97) &amp;&amp; (c &lt;= 122)) || ((c &gt;= 65) &amp;&amp; (c &lt;= 90)); }<br>
+</td>
+</tr></table></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor6"><div class="full column level6" style='font-family: "DejaVu Sans Mono", sans-serif;  font-weight: 300;  font-size: 12px;'></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor6"><div class="full column level6" style='font-family: "DejaVu Sans Mono", sans-serif;  font-weight: 300;  font-size: 12px;'></div></div></td>
 </tr></table></div>
+</div>
+<table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="aOATk0mNSS9">
+<td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor4"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
+<td class=" subcell wholedocgutter level4 levelguttercolor4" style="width: 63px;"></td>
+<td class=" subcell wholedocgutter indicator level4 levelguttercolor4" style="width: 15px;"><img onmousedown="ioSwitch('paOATk0mNSS9', event.shiftKey)" id="iaOATk0mNSS9" border="0" alt="V" class="parent" src="Expanded.png" title="collapse"></td>
+<td class=" subcell wholedocgutter labelpadding level4 levelguttercolor4" style=" width: 1px; "></td>
+<td class=" content level4 subcell">Biopax also has a displayName field, which could be used to set the sbml 'name' attribute.<br>
+</td>
+</tr></table></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor4"><div class="full column level4" style=""></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor4"><div class="full column level4" style=""></div></div></td>
+</tr></table>
+<div id="paOATk0mNSS9" class="expanded">
+<table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="dRxRos6YXE2">
+<td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor5"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
+<td class=" subcell wholedocgutter level5 levelguttercolor5" style="width: 79px;"></td>
+<td class=" subcell wholedocgutter indicator level5 levelguttercolor5" style="width: 15px;"><img onmousedown="ioSwitch('pdRxRos6YXE2', event.shiftKey)" id="idRxRos6YXE2" border="0" alt="V" class="parent" src="Expanded.png" title="collapse"></td>
+<td class=" subcell wholedocgutter labelpadding level5 levelguttercolor5" style=" width: 1px; "></td>
+<td class=" content level5 subcell">If there is no displayName for a given Biopax thing, then perhaps the rdf:ID could be reused for the SBML name as a fall-back. In that case, also, it would not need to be munged, because SBML name attributes can have almost any character, unlike the SBML id.<br>
+</td>
+</tr></table></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor5"><div class="full column level5" style=""></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor5"><div class="full column level5" style=""></div></div></td>
+</tr></table>
+<div id="pdRxRos6YXE2" class="expanded"><table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="bHOGY5CVfg6">
+<td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor6"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
+<td class=" subcell wholedocgutter level6 levelguttercolor6" style="width: 95px;"></td>
+<td class=" subcell wholedocgutter indicator level6 levelguttercolor6" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
+<td class=" subcell wholedocgutter labelpadding level6 levelguttercolor6" style=" width: 1px; "></td>
+<td class=" content level6 subcell">But htis is a <br>
+</td>
+</tr></table></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor6"><div class="full column level6" style=""></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor6"><div class="full column level6" style=""></div></div></td>
+</tr></table></div>
+</div>
 </div>
 <table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="pPJfucKElX7">
 <td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor3"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
