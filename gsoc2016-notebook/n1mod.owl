@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<rdf:RDF 
+xmlns="http://www.biopax.org/examples/myExample#" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:owl="http://www.w3.org/2002/07/owl#" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" 
+xml:base="http://www.biopax.org/examples/myExample"> 
+<owl:Ontology rdf:about=""> 
+<owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" /> 
+</owl:Ontology> 
+
+<bp:Protein rdf:ID="Protein_27"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serine-protein kinase AT(Ataxia telangiectasia mutated) (A-T, mutated)</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_uniprot_knowledgebase_Q13315" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATM</bp:displayName> 
+<bp:cellularLocation rdf:resource="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267" /> 
+<bp:entityReference rdf:resource="http://identifiers.org/uniprot/Q13315" /> 
+<bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ataxia telangiectasia mutated) (A-T, mutated) </bp:name> 
+<bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">&quot;FUNCTION Involved in signal transduction, cell cycle control and DNA repair. May function as a tumor suppressor. Necessary for activation of ABL1 and SAPK&quot;</bp:comment> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:Protein> 
+
+<bp:UnificationXref rdf:about="UnificationXref_chebi_CHEBI_2359"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI:2359</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">chebi</bp:db> 
+</bp:UnificationXref> 
+
+<bp:RelationshipXref rdf:ID="RelationshipXref_1"> 
+<bp:relationshipType rdf:resource="http://identifiers.org/psimi/MI:0361" /> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EC 2.7.1.37</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">iubmb</bp:db> 
+</bp:RelationshipXref> 
+
+<bp:Catalysis rdf:ID="Catalysis_1"> 
+<bp:controller rdf:resource="#Protein_27" /> 
+<bp:xref rdf:resource="#RelationshipXref_29" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATM phosphorylates and activates CHK2</bp:displayName> 
+<bp:availability rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome is a free on-line resource, and Reactome software is open-source. However, please take note of our disclaimer. (http://reactome.org/disclaimer.html) </bp:availability> 
+<bp:controlled rdf:resource="#BiochemicalReaction_2" /> 
+<bp:controlType rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType> 
+<bp:catalysisDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:catalysisDirection> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:Catalysis> 
+
+<bp:SequenceSite rdf:ID="SequenceSite_20"> 
+<bp:sequencePosition rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1981</bp:sequencePosition> 
+<bp:positionStatus rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EQUAL</bp:positionStatus> 
+</bp:SequenceSite> 
+
+<bp:SmallMoleculeReference rdf:about="http://identifiers.org/chebi/CHEBI:2359"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adenosine 5&apos;-triphosphate</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_chebi_CHEBI_2359" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP</bp:displayName> 
+</bp:SmallMoleculeReference> 
+
+<bp:ProteinReference rdf:about="http://identifiers.org/uniprot/Q13315"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serine-protein kinase ATM (Ataxia telangiectasia mutated) (A-T, mutated)</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_uniprot_knowledgebase_Q13315" /> 
+<bp:xref rdf:resource="#RelationshipXref_1" /> 
+<bp:organism rdf:resource="http://identifiers.org/taxonomy/9606" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATM</bp:displayName> 
+<bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ataxia telangiectasia mutated) (A-T, mutated) </bp:name> 
+</bp:ProteinReference> 
+
+<bp:UnificationXref rdf:about="UnificationXref_molecular_interactions_ontology_MI_0176"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0176</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">molecular interactions ontology</bp:db> 
+</bp:UnificationXref> 
+
+<bp:SmallMoleculeReference rdf:about="http://identifiers.org/chebi/CHEBI:2342"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adenosine 5&apos;-diphosphate</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_chebi_CHEBI_2342" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADP</bp:displayName> 
+</bp:SmallMoleculeReference> 
+
+<bp:Protein rdf:ID="Protein_5"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serine/threonine-protein kinase Chk2 (Cds1)</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_uniprot_knowledgebase_O96017" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHK2</bp:displayName> 
+<bp:cellularLocation rdf:resource="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267" /> 
+<bp:entityReference rdf:resource="http://identifiers.org/uniprot/O96017" /> 
+<bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEK2</bp:name> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:Protein> 
+
+<bp:Stoichiometry rdf:ID="Stoichiometry_3"> 
+<bp:physicalEntity rdf:resource="#SmallMolecule_21" /> 
+<bp:stoichiometricCoefficient rdf:datatype = "http://www.w3.org/2001/XMLSchema#float">1.0</bp:stoichiometricCoefficient> 
+</bp:Stoichiometry> 
+
+<bp:RelationshipXref rdf:ID="RelationshipXref_29"> 
+<bp:relationshipType rdf:resource="http://identifiers.org/psimi/MI:0355" /> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0016301</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gene ontology</bp:db> 
+</bp:RelationshipXref> 
+
+<bp:RelationshipTypeVocabulary rdf:about="http://identifiers.org/psimi/MI:0361"> 
+<bp:xref rdf:resource="UnificationXref_molecular_interactions_ontology_MI_0361" /> 
+<bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EC Number</bp:comment> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">additional information</bp:term> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">see-also</bp:term> 
+</bp:RelationshipTypeVocabulary> 
+
+<bp:PublicationXref rdf:about="http://identifiers.org/pubmed/9889122"> 
+<bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">1999</bp:year> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Laus, MC </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Blasina, A </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">de Weyer, IV </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Parker, AE </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">McGowan, CH </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Luyten, WH </bp:author> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">9889122</bp:id> 
+<bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Curr Biol 9:1-10 </bp:source> 
+<bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A human homologue of the checkpoint kinase Cds1 directly inhibits Cdc25 phosphatase.</bp:title> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">pubmed</bp:db> 
+</bp:PublicationXref> 
+
+<bp:UnificationXref rdf:about="UnificationXref_molecular_interactions_ontology_MI_0361"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0361</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">molecular interactions ontology</bp:db> 
+</bp:UnificationXref> 
+
+<bp:Protein rdf:ID="Protein_16"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serine/threonine-protein kinase Chk2 (Cds1)</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_uniprot_knowledgebase_O96017" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHK2</bp:displayName> 
+<bp:cellularLocation rdf:resource="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267" /> 
+<bp:feature rdf:resource="#ModificationFeature_17" /> 
+<bp:entityReference rdf:resource="http://identifiers.org/uniprot/O96017" /> 
+<bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEK2</bp:name> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:Protein> 
+
+<bp:PublicationXref rdf:about="http://identifiers.org/pubmed/12773400"> 
+<bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">2003</bp:year> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Carr, AM </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Gabriel, A </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Perricaudet, M </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Foray, N </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Marot, D</bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Ashworth, A </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Randrianarison, V </bp:author> 
+<bp:author rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Jeggo, P </bp:author> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">12773400</bp:id> 
+<bp:source rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">EMBO J 22:2860-71 </bp:source> 
+<bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">A subset of ATM- and ATR-dependent phosphorylation events requires the BRCA1 protein.</bp:title> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">pubmed</bp:db> 
+</bp:PublicationXref> 
+
+<bp:UnificationXref rdf:about="UnificationXref_reactome_REACT_69891"> 
+<bp:comment rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">http://www.reactome.org </bp:comment> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">REACT_69891</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">reactome</bp:db> 
+</bp:UnificationXref> 
+
+<bp:PublicationXref rdf:about="http://identifiers.org/pubmed/15338623"> 
+<bp:year rdf:datatype = "http://www.w3.org/2001/XMLSchema#int">2003</bp:year> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">15338623</bp:id> 
+<bp:title rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">The Genome Knowledgebase: a resource for biologists and bioinformaticists.</bp:title> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">pubmed</bp:db> 
+</bp:PublicationXref> 
+
+<bp:Stoichiometry rdf:ID="Stoichiometry_4"> 
+<bp:physicalEntity rdf:resource="#SmallMolecule_13" /> 
+<bp:stoichiometricCoefficient rdf:datatype = "http://www.w3.org/2001/XMLSchema#float">1.0</bp:stoichiometricCoefficient> 
+</bp:Stoichiometry> 
+
+<bp:UnificationXref rdf:about="UnificationXref_uniprot_knowledgebase_O96017"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">O96017</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">uniprot knowledgebase</bp:db> 
+</bp:UnificationXref> 
+
+<bp:SmallMolecule rdf:ID="SmallMolecule_21"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adenosine 5&apos;-diphosphate</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_chebi_CHEBI_2342" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ADP</bp:displayName> 
+<bp:cellularLocation rdf:resource="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267" /> 
+<bp:entityReference rdf:resource="http://identifiers.org/chebi/CHEBI:2342" /> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:SmallMolecule> 
+
+<bp:UnificationXref rdf:about="UnificationXref_chebi_CHEBI_2342"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI:2342</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">chebi</bp:db> 
+</bp:UnificationXref> 
+
+<bp:CellularLocationVocabulary rdf:about="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267"> 
+<bp:xref rdf:resource="UnificationXref_gene_ontology_GO_0005654" /> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">nucleoplasm</bp:term> 
+</bp:CellularLocationVocabulary> 
+
+<bp:Provenance rdf:ID="Provenance_3"> 
+<bp:xref rdf:resource="http://identifiers.org/pubmed/15338623" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Reactome (http://reactome.org)</bp:displayName> 
+</bp:Provenance> 
+
+<bp:RelationshipTypeVocabulary rdf:about="http://identifiers.org/psimi/MI:0355"> 
+<bp:xref rdf:resource="UnificationXref_molecular_interactions_ontology_MI_0355" /> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gene ontology term for cellular function</bp:term> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">molecular function</bp:term> 
+</bp:RelationshipTypeVocabulary> 
+
+<bp:BioSource rdf:about="http://identifiers.org/taxonomy/9606"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_taxonomy_9606" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Human</bp:displayName> 
+</bp:BioSource> 
+
+<bp:UnificationXref rdf:about="UnificationXref_taxonomy_9606"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">9606</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">taxonomy</bp:db> 
+</bp:UnificationXref> 
+
+<bp:UnificationXref rdf:about="UnificationXref_molecular_interactions_ontology_MI_0355"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">MI:0355</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">molecular interactions ontology</bp:db> 
+</bp:UnificationXref> 
+
+<bp:SequenceModificationVocabulary rdf:about="SequenceModificationVocabulary_45533e7b16608edaaeb7ee7d01e108b3"> 
+<bp:xref rdf:resource="UnificationXref_molecular_interactions_ontology_MI_0176" /> 
+<bp:term rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">o-phospho-serine</bp:term> 
+</bp:SequenceModificationVocabulary> 
+
+<bp:BiochemicalReaction rdf:ID="BiochemicalReaction_2"> 
+<bp:participantStoichiometry rdf:resource="#Stoichiometry_4" /> 
+<bp:participantStoichiometry rdf:resource="#Stoichiometry_3" /> 
+<bp:participantStoichiometry rdf:resource="#Stoichiometry_2" /> 
+<bp:participantStoichiometry rdf:resource="#Stoichiometry_1" /> 
+<bp:xref rdf:resource="UnificationXref_reactome_REACT_69891" /> 
+<bp:xref rdf:resource="http://identifiers.org/pubmed/9889122" /> 
+<bp:xref rdf:resource="http://identifiers.org/pubmed/12773400" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Phosphorylation and activation of CHK2 by ATM</bp:displayName> 
+<bp:right rdf:resource="#Protein_16" /> 
+<bp:right rdf:resource="#SmallMolecule_21" /> 
+<bp:spontaneous rdf:datatype = "http://www.w3.org/2001/XMLSchema#boolean">false</bp:spontaneous> 
+<bp:left rdf:resource="#SmallMolecule_13" /> 
+<bp:left rdf:resource="#Protein_5" /> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+<bp:conversionDirection rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">LEFT_TO_RIGHT</bp:conversionDirection> 
+</bp:BiochemicalReaction> 
+
+<bp:UnificationXref rdf:about="UnificationXref_gene_ontology_GO_0005654"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">GO:0005654</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">gene ontology</bp:db> 
+</bp:UnificationXref> 
+
+<bp:UnificationXref rdf:about="UnificationXref_uniprot_knowledgebase_Q13315"> 
+<bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Q13315</bp:id> 
+<bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">uniprot knowledgebase</bp:db> 
+</bp:UnificationXref> 
+
+<bp:Stoichiometry rdf:ID="Stoichiometry_2"> 
+<bp:physicalEntity rdf:resource="#Protein_27" /> 
+<bp:stoichiometricCoefficient rdf:datatype = "http://www.w3.org/2001/XMLSchema#float">1.0</bp:stoichiometricCoefficient> 
+</bp:Stoichiometry> 
+
+<bp:Stoichiometry rdf:ID="Stoichiometry_1"> 
+<bp:physicalEntity rdf:resource="#Protein_5" /> 
+<bp:stoichiometricCoefficient rdf:datatype = "http://www.w3.org/2001/XMLSchema#float">1.0</bp:stoichiometricCoefficient> 
+</bp:Stoichiometry> 
+
+<bp:ModificationFeature rdf:ID="ModificationFeature_17"> 
+<bp:modificationType rdf:resource="SequenceModificationVocabulary_45533e7b16608edaaeb7ee7d01e108b3" /> 
+<bp:featureLocation rdf:resource="#SequenceSite_20" /> 
+</bp:ModificationFeature> 
+
+<bp:SmallMolecule rdf:ID="SmallMolecule_13"> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Adenosine 5&apos;-triphosphate</bp:standardName> 
+<bp:xref rdf:resource="UnificationXref_chebi_CHEBI_2359" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ATP</bp:displayName> 
+<bp:cellularLocation rdf:resource="CellularLocationVocabulary_cf205674aefd94fbce6abca5009c0267" /> 
+<bp:entityReference rdf:resource="http://identifiers.org/chebi/CHEBI:2359" /> 
+<bp:dataSource rdf:resource="#Provenance_3" /> 
+</bp:SmallMolecule> 
+
+<bp:ProteinReference rdf:about="http://identifiers.org/uniprot/O96017"> 
+<bp:entityFeature rdf:resource="#ModificationFeature_17" /> 
+<bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Serine/threonine-protein kinase Chk2 (Cds1)</bp:standardName> 
+<bp:xref rdf:resource="#RelationshipXref_1" /> 
+<bp:xref rdf:resource="UnificationXref_uniprot_knowledgebase_O96017" /> 
+<bp:organism rdf:resource="http://identifiers.org/taxonomy/9606" /> 
+<bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHK2</bp:displayName> 
+<bp:name rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEK2</bp:name> 
+</bp:ProteinReference> 
+</rdf:RDF>
