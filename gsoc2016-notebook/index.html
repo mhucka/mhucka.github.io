@@ -2804,22 +2804,23 @@
 <td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor3"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
 <td class=" subcell wholedocgutter level3 levelguttercolor3" style="width: 45px;"></td>
 <td class=" subcell wholedocgutter indicator level3 levelguttercolor3" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
-<td class=" subcell wholedocgutter labelpadding level3 levelguttercolor3" style=" width: 1px; "></td>
-<td class=" content level3 subcell"></td>
+<td class=" subcell wholedocgutter labelpadding level3 levelguttercolor3" style=' width: 1px; font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></td>
+<td class=" content level3 subcell" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'>One more thing that I forgot to mention is that a similar translation can be done into species/reactions.  Indeed, this is what we did in our state-based abstraction work (see Chapter 6 of my book and related publications).  We actually first became interested in SBML due to the fact that it was powerful enough to allow us to express our models at all levels of abstraction.  Namely, we were converting reaction-based models into state-based models in which species took logical values and were updated using logical equations.  We were able to express our models throughout this abstraction process in SBML at all times.  <br><br>Therefore, SBML-qual is a “syntactic” and NOT “semantic” extension of SBML.  It allows you to express these types of models more concisely, but these types of models were always expressible in SBML.  <br><br>One final thing, my concern is not about being “simulatable”.  My concern is there exists no tools, to the best of my knowledge, that can open a hybrid model for any type of analysis or even visualization.  This I think is a very significant concern.  <br><br>Chris  <br><br>
+</td>
 </tr></table></div></td>
-<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor3"><div class="full column level3" style=""></div></div></td>
-<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor3"><div class="full column level3" style=""></div></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor3"><div class="full column level3" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor3"><div class="full column level3" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></div></div></td>
 </tr></table>
 <table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="kpv8JfwpNid">
 <td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor3"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
 <td class=" subcell wholedocgutter level3 levelguttercolor3" style="width: 45px;"></td>
 <td class=" subcell wholedocgutter indicator level3 levelguttercolor3" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
-<td class=" subcell wholedocgutter labelpadding level3 levelguttercolor3" style=" width: 1px; font-style: italic;"></td>
-<td class=" content level3 subcell" style="font-style: italic;">Ok, just for fun, I reminded myself how this can be done with species/reactions (see attached model).  Note that I simplified the logic a little bit from what is in the spec, but it is equivalent.  Simulating this model reproduces the race condition.  Namely, using gillespie simulation you can show that it can either move from state (1,0,0) to (0,0,0) and stay there OR from (1,0,0) to (2,1,1) and stay there.  In other words, there are two stable states.  <br><br>Again, I’m not arguing that qual is not useful and not a more simple, concise way to express this.  I’m just trying to show that if we want to do core-only BioPax to SBML conversion that it is indeed possible.<br><br>Similarly, I’m also confident that we can do a qual-only BioPax to SBML conversion with a bit of thought.<br><br>Cheers,<br><br>Chris<br><br>￼<br>￼<br>
+<td class=" subcell wholedocgutter labelpadding level3 levelguttercolor3" style=' width: 1px; font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></td>
+<td class=" content level3 subcell" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'>Ok, just for fun, I reminded myself how this can be done with species/reactions (see attached model).  Note that I simplified the logic a little bit from what is in the spec, but it is equivalent.  Simulating this model reproduces the race condition.  Namely, using gillespie simulation you can show that it can either move from state (1,0,0) to (0,0,0) and stay there OR from (1,0,0) to (2,1,1) and stay there.  In other words, there are two stable states.  <br><br>Again, I’m not arguing that qual is not useful and not a more simple, concise way to express this.  I’m just trying to show that if we want to do core-only BioPax to SBML conversion that it is indeed possible.<br><br>Similarly, I’m also confident that we can do a qual-only BioPax to SBML conversion with a bit of thought.<br><br>Cheers,<br><br>Chris<br><br>￼<br>￼<br>
 </td>
 </tr></table></div></td>
-<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor3"><div class="full column level3" style="font-style: italic;"></div></div></td>
-<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor3"><div class="full column level3" style="font-style: italic;"></div></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor3"><div class="full column level3" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor3"><div class="full column level3" style='font-family: "DejaVu Sans Mono", sans-serif;  font-style: italic;font-size: 12px;'></div></div></td>
 </tr></table>
 </div>
 </div>
