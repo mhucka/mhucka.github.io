@@ -2978,7 +2978,7 @@
 <table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="gfSBOrUgklK">
 <td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor2"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
 <td class=" subcell wholedocgutter level2 levelguttercolor2" style="width: 25px;"></td>
-<td class=" subcell wholedocgutter indicator level2 levelguttercolor2" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
+<td class=" subcell wholedocgutter indicator level2 levelguttercolor2" style="width: 15px;"><img onmousedown="ioSwitch('pgfSBOrUgklK', event.shiftKey)" id="igfSBOrUgklK" border="0" alt="V" class="parent" src="Expanded.png" title="collapse"></td>
 <td class=" subcell wholedocgutter labelpadding level2 levelguttercolor2" style=" width: 1px; "></td>
 <td class=" content level2 subcell">There has been discussion on Slack about SBO term assignments for some Biopax things like TemplateReactionRegulation. I mailed NLN and Gary Bader and Nick Juty for consultation.<br>
 </td>
@@ -2986,6 +2986,17 @@
 <td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor2"><div class="full column level2" style=""></div></div></td>
 <td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor2"><div class="full column level2" style=""></div></div></td>
 </tr></table>
+<div id="pgfSBOrUgklK" class="expanded"><table cellspacing="0" border="0" cellpadding="0" class="row heighthack"><tr id="oWQ_zeWuGz2">
+<td class=" col1 colbackground1 col_width1" style=""><div class=" full levelcolor3"><table border="0" cellspacing="0" cellpadding="0" style="height:100%" class=" col_width1 col1"><tr>
+<td class=" subcell wholedocgutter level3 levelguttercolor3" style="width: 41px;"></td>
+<td class=" subcell wholedocgutter indicator level3 levelguttercolor3" style="width: 15px;"><img border="0" alt="*" class="leaf" src="LeafRowHandle.png"></td>
+<td class=" subcell wholedocgutter labelpadding level3 levelguttercolor3" style=" width: 1px; font-style: italic;"></td>
+<td class=" content level3 subcell" style="font-style: italic;">[TN] Hi everyone,  I'm starting to notice that there are a couple of sbo terms used in the conversion that are mapping to the same SBO value. for example, TemplateReactionRegulation and GeneticInteraction are currently mapped to the same sbo value. Should I be concern about this when we want to roundtrip these sbo terms back to biopax?<br><br>Also, I forgot to parse PhysicalInteractions that dealt with TemplateReaction, GeneticInteraction, and MolecularInteraction. I have added these terms into the conversion and into the online spreadsheet that Mike have created. I was able to set the SBO value for  GeneticInteraction and MolecularInteraction. I am unable to map TemplateReaction. I read the biopax specification document and looked at the class definition for these terms found here:<br><br> <span><a href="http://www.biopax.org/owldoc/Level3/classes/">http://www.biopax.org/owldoc/Level3/classes/</a></span><br><br>It looks like there are subtle differences between TemplateReaction and TemplateReactionRegulation. Can I set both of these terms to the same sbo value (SBO:0000343) or should they be mapped to different sbo terms? (edited)<br>
+</td>
+</tr></table></div></td>
+<td class=" col2 colbackground2 col_width2" style=""><div class=" full levelcolor3"><div class="full column level3" style="font-style: italic;"></div></div></td>
+<td class=" col3 colbackground3 col_width3" style=""><div class=" full levelcolor3"><div class="full column level3" style="font-style: italic;"></div></div></td>
+</tr></table></div>
 </div>
 </td></tr></table></body>
 </html>
